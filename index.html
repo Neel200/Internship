@@ -1,125 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>document</title>
-        <style>
-            body{
-                background-color: rgb(34, 235, 151);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                height: auto;
-            }
-            h1{
-                margin: 20px;
-            }
-            form{
-                background-color: white;
-                padding: 20px 30px;
-                border-radius: 10px;
-            }
-            table{
-                width: 100%;
-                border-collapse: collapse;
-            }
-            th{
-                background-color: #459af5;
-                color: #fff;
-                padding: 10px;
-                text-align: left;
-            }
-            td{
-                padding: 10px;
-            }
-            input[type="text"], input[type="date"], select, input[type="file"] {
-                width: 95%;
-                padding: 8px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                margin-top: 5px;
-            }
-            input[type="radio"] {
-                margin: 0 5px;
-            }
-            input[type="submit"] {
-                background-color: #007BFF;
-                color: #fff;
-                padding: 10px 20px;
-                border: 1px;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: 16px;
-            }
-            input[type="submit"]:hover {
-                background-color: #0056b3;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        body{
+            background: url('industries.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #90ee90;
+            text-align: center;
+        }
+        h1{
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 12px;
+        }
+        a{
+            margin-top: 20px;
+            background-color: #e63946;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        a:hover {
+            background-color: #d62828;
+        }
+    </style>
+</head>
 <body>
-    <h1>Registration form</h1>
-    <br>
-    <form action="thank.html">
-    <table border="1">
-        <thead>
-            <th>Credentials</th>
-            <th>Input</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Email ID:</td>
-                <td>
-                    <input type="text" id="email" placeholder="enter valid email">
-                </td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td>
-                    <input type="text" id="password" placeholder="enter valid password">
-                </td>
-            </tr>
-            <tr>
-                <td>Date of Birth:</td>
-                <td>
-                    <input type="date" id="datepicker">
-                </td>
-            </tr>
-            <tr>
-                <td>Choose Course:</td>
-                <td>
-                    <select name="courses" id="selector1">
-                        <option value="Choose">Choose</option>
-                        <option value="HTML">HTML</option>
-                        <option value="Python">Python</option>
-                        <option value="Java">Java</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Preferred Language:</td>
-                <td>
-                    <input type="radio" name="lang1" id="lang1" value="English">
-                    <label for="lang1">English</label>
-                    <input type="radio" name="lang2" id="lang2" value="Hindi">
-                    <label for="lang2">Hindi</label>
-                    <input type="radio" name="lang3" id="lang3" value="Bengali">
-                    <label for="lang3">Bengali</label>
-                </td>
-            </tr>
-            <tr>
-                <td>Upload File:</td>
-                <td>
-                    <input type="file" name="file1" id="file1">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center;">
-                    <input type="submit" value="Submit">
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    </form>
+    <h1>Registration Successful! Thank you for joining.</h1>
+    <a href="index.html">Back to Home</a>
 </body>
 </html>
-
